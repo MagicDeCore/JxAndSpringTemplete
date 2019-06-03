@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.MainController">
+   <children>
+      <TableView fx:id="usersTable" layoutX="14.0" layoutY="120.0" onMouseClicked="#selectUser" prefHeight="266.0" prefWidth="257.0">
+        <columns>
+          <TableColumn prefWidth="28.0" text="ID" />
+          <TableColumn prefWidth="81.0" text="Имя" />
+            <TableColumn prefWidth="65.0" text="Код" />
+            <TableColumn prefWidth="67.0" text="Имейл" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchBtn" layoutX="374.0" layoutY="120.0" mnemonicParsing="false" onAction="#searchBtnAction" prefHeight="25.0" prefWidth="212.0" text="Поиск" />
+      <Button fx:id="createBtn" layoutX="374.0" layoutY="160.0" mnemonicParsing="false" onAction="#createBtnAction" prefHeight="25.0" prefWidth="212.0" text="Создать Пользователя" />
+      <Button fx:id="editBtn" layoutX="374.0" layoutY="200.0" mnemonicParsing="false" onAction="#editBtnAction" prefHeight="25.0" prefWidth="212.0" text="Редактировать Пользователя" />
+      <Button fx:id="deleteBtn" layoutX="374.0" layoutY="240.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="25.0" prefWidth="212.0" text="Удалить Пользователя" />
+      <Button fx:id="refreshBtn" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" onAction="#refreshBtnAction" text="Обновить" />
+      <Button fx:id="backBtn" layoutX="538.0" layoutY="360.0" mnemonicParsing="false" onAction="#backBtnAction" text="Назад" />
+      <TextField fx:id="name" layoutX="374.0" layoutY="120.0" prefHeight="25.0" prefWidth="215.0" promptText="Имя" />
+      <TextField fx:id="code" layoutX="374.0" layoutY="160.0" prefHeight="25.0" prefWidth="215.0" promptText="Код" />
+      <Button fx:id="startSearchBtn" layoutX="517.0" layoutY="200.0" mnemonicParsing="false" onAction="#startSearchBtnAction" prefHeight="25.0" prefWidth="68.0" text="Поиск" />
+      <Label fx:id="errorMessage" layoutX="295.0" layoutY="45.0" prefHeight="25.0" prefWidth="291.0" textFill="#d04646" />
+   </children>
+</AnchorPane>

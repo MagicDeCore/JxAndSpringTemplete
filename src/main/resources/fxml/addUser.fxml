@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.AddUserController">
+   <children>
+      <TableView fx:id="usersTable" layoutX="14.0" layoutY="120.0" prefHeight="266.0" prefWidth="257.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="75.0" text="Имя" />
+            <TableColumn prefWidth="81.0" text="Код" />
+        </columns>
+      </TableView>
+      <TextField fx:id="name" layoutX="374.0" layoutY="120.0" prefHeight="25.0" prefWidth="215.0" promptText="Имя" />
+      <TextField fx:id="code" layoutX="374.0" layoutY="160.0" prefHeight="25.0" prefWidth="215.0" promptText="Код" />
+      <TextField fx:id="email" layoutX="374.0" layoutY="200.0" prefHeight="25.0" prefWidth="215.0" promptText="Имейл" />
+      <TextField fx:id="address" layoutX="374.0" layoutY="240.0" prefHeight="25.0" prefWidth="215.0" promptText="Адрес" />
+      <Button fx:id="addBtn" layoutX="517.0" layoutY="280.0" mnemonicParsing="false" onAction="#addBtnAction" text="Добавить" />
+      <Label fx:id="errorMessage" layoutX="281.0" layoutY="45.0" prefHeight="25.0" prefWidth="291.0" textFill="#d04646" />
+      <Button fx:id="backBtn" layoutX="538.0" layoutY="360.0" mnemonicParsing="false" onAction="#backBtnAction" text="Назад" />
+   </children>
+</AnchorPane>

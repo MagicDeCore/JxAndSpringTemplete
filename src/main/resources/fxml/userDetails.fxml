@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.DetailsUserController">
+   <children>
+      <TextField fx:id="name" disable="true" layoutX="55.0" layoutY="120.0" prefHeight="25.0" prefWidth="215.0" promptText="Имя" />
+      <TextField fx:id="code" disable="true" layoutX="55.0" layoutY="160.0" prefHeight="25.0" prefWidth="215.0" promptText="Код" />
+      <TextField fx:id="email" disable="true" layoutX="358.0" layoutY="120.0" prefHeight="25.0" prefWidth="215.0" promptText="Имейл" />
+      <TextField fx:id="address" disable="true" layoutX="358.0" layoutY="160.0" prefHeight="25.0" prefWidth="215.0" promptText="Адрес" />
+      <Label fx:id="errorMessage" layoutX="33.0" layoutY="77.0" prefHeight="25.0" prefWidth="291.0" textFill="#545050">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="backBtn" layoutX="538.0" layoutY="360.0" mnemonicParsing="false" onAction="#backBtnAction" text="Назад" />
+      <Label layoutX="19.0" layoutY="124.0" text="Имя" />
+      <Label layoutX="21.0" layoutY="164.0" text="Код" />
+      <Label layoutX="306.0" layoutY="124.0" text="Имейл" />
+      <Label layoutX="308.0" layoutY="164.0" text="Адрес" />
+   </children>
+</AnchorPane>
